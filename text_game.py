@@ -7,12 +7,11 @@ def instructions():   #print guide
     print("MATH GAME\n[play] to start a new game\n[stats] to print stats\n[quit] to quit game")
 
 points, lives, level = 0,0,0    #Initialize variables here
-play = True
-
 with open("game.txt", "r") as file:   # get stats from game.txt
     points, lives, level = map(int, file.readline().split())  # make strs into ints
 
 instructions()
+play = True
 while play:               # Loop till user enters close
     action = input(": ")
     if action == "play":
