@@ -4,7 +4,7 @@ from math import floor   # don't Ctrl + C
 def display_stats(points, lives, level):    #prints out stats
     print(f"Points: {points}\nLives: {lives}\nLevel: {level}")
 def instructions():   #print guide
-    print("MATH GAME\n[play] to start a new game\n[stats] to print stats\n[quit] to quit game")
+    print("MATH GAME\n[play] to start a new game\n[stat] to print stats\n[quit] to quit game")
 
 points, lives, level = 0,0,0    #Initialize variables here
 with open("game.txt", "r") as file:   # get stats from game.txt
